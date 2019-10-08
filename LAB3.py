@@ -165,7 +165,7 @@ class SortedList(object):
         if self.head is None and self.tail is None:
             return -math.inf 
         else: 
-            return self.tail.data 
+            return self.tail.data     
     
     #Returns true if the list has duplicate elements     
     def HasDuplicates(self): 
@@ -328,7 +328,18 @@ class List(object):
         if self.head is None and self.tail is None:
             return math.inf 
         else: 
-            return self.head.data
+            #setting current and min to first value 
+            current = self.head
+            min = current.data
+            while current is not None: 
+                #checking if the current is less than the min
+                if current.data < min :
+                    #updating min 
+                    min = current.data
+
+                current = current.next 
+                
+            return min
         
      #Returns largest element in the list 
     def Max(self):
@@ -337,7 +348,18 @@ class List(object):
         if self.head is None and self.tail is None:
             return -math.inf 
         else: 
-            return self.tail.data
+            #finding max 
+            current = self.head
+            #setting max to the head
+            max = current.data
+            while current is not None: 
+                #checking if max is less than current 
+                #if it is less, update max value 
+                if max < current.data:
+                    max = current.data
+                current = current.next 
+                
+            return max          
         
     #Returns true if the list has duplicate elements     
     def HasDuplicates(self): 
@@ -361,6 +383,7 @@ class List(object):
             t = t.next 
         #returning the data of the kth node    
         return t.data 
+
 
 #"""
 #******SORTED LIST******
@@ -519,7 +542,7 @@ while True:
         totalTimeSorted = endtime-start
         start2 = time.time()
         print("Normal List:")
-        print("Minimum",normal_list2.Min()) 
+        print("Minimum",normal_list.Min()) 
         endtime2 = time.time()
         totalTimeNormal = endtime2-start2
         print("\nSorted List run time is",totalTimeSorted, "\nNormal List run time is", totalTimeNormal,"\n")
@@ -534,7 +557,7 @@ while True:
         totalTimeSorted = endtime-start
         start2 = time.time()
         print("Normal List:")
-        print("Maximum:",normal_list2.Max()) 
+        print("Maximum:",normal_list.Max()) 
         endtime2 = time.time()
         totalTimeNormal = endtime2-start2
         print("\nSorted List run time is",totalTimeSorted, "\nNormal List run time is", totalTimeNormal,"\n")
