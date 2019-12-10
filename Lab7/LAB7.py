@@ -4,7 +4,7 @@ Andrea Ulloa
 Lab 7 
 Professor: Olac Fuentes 
 TA: Anindita Nath 
-Date of last modification: 12/4/19
+Date of last modification: 12/9/19
 Purpose: Implement Algorithm design techniques 
 to solve the Hamiltonian Cycle problem
 
