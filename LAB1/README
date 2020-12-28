@@ -1,0 +1,2 @@
+The purpose of this program was to find anagrams of a word that is specified by the user. These anagrams are located in a large text file, and the file had to be read to find 
+all possible anagrams of different words. Along with this program came the use and importance of sets, a data structure that holds the anagrams in this lab. 
