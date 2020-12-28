@@ -1,0 +1,3 @@
+For this lab, I implemented different types of graphs and search algorithms in order to come up with a solution for a puzzle. The main purpose of this lab is 
+to find six different solutions to the fox, chicken, and sack of grain problem. The different types of graphs were used and implemented with two search algorithms, 
+breadth-first search and depth-first search. The search algorithms were then used to find valid paths to solve the problem.
